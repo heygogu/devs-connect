@@ -84,7 +84,6 @@ const extensions = [
   OrderedList,
   HorizontalRule,
   Emoji,
-  Excalidraw,
   Highlight,
   Attachment,
   Mention,
@@ -100,14 +99,11 @@ const extensions = [
   SubAndSuperScript,
   Table,
   TaskList,
-  ExportPdf,
-  ExportWord,
+  
   TableOfContents,
   TextDirection,
-  Katex,
   SearchAndReplace,
   SlashCommand,
-  Mermaid,
   LineHeight,
   Code,
 ];
@@ -208,6 +204,7 @@ export default function BlogEditor() {
   const onChangeContent = (value: any) => {
     setContent(value);
   };
+  console.log(content);
 
   useEffect(() => {
     if (isReady && editor) {
